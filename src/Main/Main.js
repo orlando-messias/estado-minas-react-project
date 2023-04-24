@@ -1,13 +1,34 @@
+import React from 'react';
 import Twitter from '../assets/social-twitter.png';
 import Whatsapp from '../assets/social-whatsapp.png';
 import Facebook from '../assets/social-facebook.png';
 import MainImage from '../assets/main-image.png';
 import LogoGoogleNews from '../assets/google-news.png';
 import SeparatorFooter from '../assets/separator-footer.png';
+import SeparatorSection from '../assets/separator-section.png';
 
 import './styles.css';
 
+const news = [
+  {
+    title: 'Oscar 2022: premiação ganha nova data para o próximo ano',
+    createdAt: '10/06/2020-08:57',
+    src: './news-images/news-img-01.png'
+  },
+  {
+    title: 'O novo trailer de Eternos é tudo o que você precisava para entrar no hype da Marvel',
+    createdAt: '10/06/2020-08:57',
+    src: './news-images/news-img-02.png'
+  },
+  {
+    title: 'Netflix fecha parceria com a Amblin, produtora de Steven Spielberg',
+    createdAt: '10/06/2020-08:57',
+    src: './news-images/news-img-03.png'
+  }
+];
+
 function Main() {
+
   return (
     <main className='main-container'>
       <div className='head-container'>
@@ -48,6 +69,25 @@ function Main() {
             Academia, responsáveis pela seletiva do prêmio. A lista final dos filmes selecionados será divulgada em 15 de
             fevereiro. O filme poderá concorrer às principais categorias, exceto Melhor Filme Estrangeiro.
           </p>
+
+          <img src={SeparatorSection} alt="Linha Seção" />
+
+          <section className='read-more-section'>
+            <p>LEIA MAIS</p>
+            <div className='read-more-section-all-content'>
+              {news.map(newsItem => (
+                <div className='read-more-section-box'>
+                  <img src={newsItem.src} alt='More' />
+                  <div className='read-more-info'>
+                    <div className='read-more-info-01'>{newsItem.createdAt}</div>
+                    <div className='read-more-info-02'><a href='#'>{newsItem.title}</a></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <img src={SeparatorSection} alt="Linha Seção" />
 
           <h3>Repercussão</h3>
 

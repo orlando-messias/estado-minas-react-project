@@ -92,3 +92,42 @@ article footer span {
   margin: 5px 0;
   display: block;
 }
+
+.read-more-section {
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: -10px;
+  padding: 0;
+}
+
+.read-more-section p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.read-more-section-all-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 324px;
+}
+
+.read-more-section-box {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.read-more-info {
+  padding-left: 10px;
+}
+
+.read-more-info-01 {
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+}
+.read-more-info-02 {
+  margin: 5px 0 0 3px;
+}
