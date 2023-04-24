@@ -1,5 +1,5 @@
 .main-container {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .head-container .news-category, section.author {
@@ -45,12 +45,22 @@ figure {
   font-size: 14px;
 }
 
-figure figcaption {
+article p {
+  line-height: 34px;
+  color: #333333;
+}
+
+article h3 {
+  font-size: 16px;
+  line-height: 34px;
+}
+
+article figure figcaption {
   font-family: 'Roboto', sans-serif;
   margin-top: 10px;
 }
 
-figure figcaption span {
+article figure figcaption span {
   display: block;
   font-size: 12px;
   line-height: 22px;
@@ -58,6 +68,27 @@ figure figcaption span {
   margin-top: 3px;
 }
 
-figure img {
+article figure img {
   width: 100%;
+}
+
+article footer {
+  text-align: center;
+}
+
+article footer p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 -10px 0;
+}
+
+article footer .separator-footer {
+  background-color: red;
+}
+
+article footer span {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px 0;
+  display: block;
 }
