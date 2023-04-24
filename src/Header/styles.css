@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 5px;
+}
+
+.left-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/** applying padding-left to the second element only **/
+.left-content :nth-child(2) {
+  padding-left: 10px;
+}
+
+header .button {
+  background-color: #F7941D;
+  border: 1px solid #F7941D;
+  color: #FFFFFF;
+  width: 55px;
+  height: 31px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}

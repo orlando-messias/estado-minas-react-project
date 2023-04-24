@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  font-size: 12px;
+}
+
+nav span {
+  cursor: pointer;
+}

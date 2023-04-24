@@ -1,0 +1,10 @@
+.main-container {
+  padding: 10px;
+}
+
+.head-container .title-category {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--blue);
+}
