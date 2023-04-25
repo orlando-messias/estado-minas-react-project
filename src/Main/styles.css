@@ -8,6 +8,22 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.publi-desktop-sup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.publi-desktop-box {
+  max-width: 930px;
+}
+
+.publi-desktop-box img {
+  width: 100%;
+}
+
 .head-container .news-category {
   font-size: 12px;
   font-weight: bold;

@@ -1,6 +1,8 @@
 import React from 'react';
 import PubliMobile01 from '../assets/publi-mobile-01.png';
 import PubliMobile02 from '../assets/publi-mobile-02.png';
+import PubliDesktop01 from '../assets/publi-desktop-01.png';
+import PubliDesktop02 from '../assets/publi-desktop-02.png';
 import ClockIcon from '../assets/clock-icon.png';
 import GoogleNews from '../assets/google-news.png';
 import Twitter from '../assets/social-twitter.png';
@@ -49,6 +51,13 @@ function Main() {
           Após dois anos, longa voltou a ser elegível para concorrer ao Oscar 2021 e causou grande
           repercussão nas redes e na imprensa nacional e internacional
         </h2>
+
+        <figure className='publi-desktop-sup'>
+          <div className='publi-desktop-box'>
+            <img src={PubliDesktop01} alt="Publicidade Desktop Topo" />
+          </div>
+        </figure>
+
 
       </div>
       <section className='author'>
@@ -123,8 +132,12 @@ function Main() {
             crítica internacional.
           </p>
 
-          <figure>
+          <figure className='publi-mobile-bottom'>
             <img src={PubliMobile02} alt="Publicidade Mobile Final" />
+          </figure>
+
+          <figure className='publi-desktop-bottom'>
+            <img src={PubliDesktop02} alt="Publicidade Mobile Final" />
           </figure>
 
           <h3>Corrida pelo Oscar</h3>

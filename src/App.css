@@ -96,6 +96,15 @@ a {
   .header-container {
     height: 58px;
   }
+
+  .main-container .head-container h1 {
+    margin: 14px 0;
+  }
+
+  .publi-mobile-bottom {
+    display: none;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -108,6 +117,14 @@ a {
   }
   
   .section-name-header {
+    display: none;
+  }
+
+  .publi-desktop-sup {
+    display: none;
+  }
+
+  .publi-desktop-bottom {
     display: none;
   }
 }
