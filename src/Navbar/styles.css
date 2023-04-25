@@ -1,10 +1,13 @@
-nav {
+nav .navbar-sup {
   display: flex;
   align-items: center;
   color: var(--blue);
   font-size: 12px;
+  padding: 0 5px;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
-nav span {
+nav.navbar-sup span {
   cursor: pointer;
 }

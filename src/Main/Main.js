@@ -1,4 +1,8 @@
 import React from 'react';
+import PubliMobile01 from '../assets/publi-mobile-01.png';
+import PubliMobile02 from '../assets/publi-mobile-02.png';
+import ClockIcon from '../assets/clock-icon.png';
+import GoogleNews from '../assets/google-news.png';
 import Twitter from '../assets/social-twitter.png';
 import Whatsapp from '../assets/social-whatsapp.png';
 import Facebook from '../assets/social-facebook.png';
@@ -32,21 +36,36 @@ function Main() {
   return (
     <main className='main-container'>
       <div className='head-container'>
+
+        <figure className='publi-mobile-top'>
+          <img src={PubliMobile01} alt="Publicidade Mobile Inicio" />
+        </figure>
+
         <span className='news-category'>OSCAR 2021</span>
+
         <h1>Repercussão: 'Bacurau' recebe apoio em nova chance de indicação ao Oscar</h1>
+
         <h2>
-          Após dois anos, longa voltou a ser elegível para concorrer ao Oscar 2021 e causou grande repercussão nas redes e na imprensa nacional e internacional
+          Após dois anos, longa voltou a ser elegível para concorrer ao Oscar 2021 e causou grande
+          repercussão nas redes e na imprensa nacional e internacional
         </h2>
+
       </div>
       <section className='author'>
         <div className='author-info'>
           <span>Tamaki Ryushi</span>
-          <span className='published-at'>02/02/2021 08:22</span>
+          <div className='published-at-box'>
+            <span><img src={ClockIcon} alt="Ícone Relógio" /></span>
+            <span className='published-at'>02/02/2021 08:22</span>
+          </div>
         </div>
-        <div className='social-media'>
-          <img src={Twitter} alt="Twitter" />
-          <img src={Whatsapp} alt="Whatsapp" />
-          <img src={Facebook} alt="Facebook" />
+        <div className='sharing'>
+          <div className='social-media'>
+            <img src={Twitter} alt="Twitter" />
+            <img src={Whatsapp} alt="Whatsapp" />
+            <img src={Facebook} alt="Facebook" />
+          </div>
+          <img src={GoogleNews} alt="Google News" />
         </div>
       </section>
 
@@ -103,6 +122,10 @@ function Main() {
             domingo (31/1), com foto da capa do jornal The New York Times, o diretor destacou o apoio da imprensa e
             crítica internacional.
           </p>
+
+          <figure>
+            <img src={PubliMobile02} alt="Publicidade Mobile Final" />
+          </figure>
 
           <h3>Corrida pelo Oscar</h3>
 

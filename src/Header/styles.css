@@ -1,9 +1,25 @@
 header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 5px;
+  max-width: 1366px;
+  margin: 0 auto;
+  border-bottom: 1px solid #D8D8D8; */
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
   padding: 0 5px;
+  max-width: 1366px;
+  margin: 0 auto;
+  border-bottom: 1px solid #D8D8D8;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .left-content {
@@ -15,6 +31,18 @@ header {
 /** applying padding-left to the second element only **/
 .left-content :nth-child(2) {
   padding-left: 10px;
+}
+
+.section-name-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.right-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .button {

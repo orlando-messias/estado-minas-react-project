@@ -2,7 +2,8 @@
   --blue: #004071;
 }
 
-body, input {
+body,
+input {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,13 +35,43 @@ a {
   text-decoration: none;
 }
 
+.publi-mobile-top {
+  display: none;
+}
+
+@media (min-width: 448px) {
+  .right-content {
+    padding-right: 20px;
+    width: 195px;
+  }
+}
+
+@media (max-width: 448px) {
+  nav {
+    display: none;
+  }
+
+  .btn-whatsapp {
+    display: none;
+  }
+
+  .separator-header {
+    display: none;
+  }
+
+  .einstein-icon {
+    display: none;
+  }
+
+}
+
 @media (max-width: 400px) {
   body {
     font-size: 16px;
   }
 
-  nav {
-    display: none;
+  .publi-mobile-top {
+    display: block;
   }
 
   h1 {
@@ -48,4 +79,35 @@ a {
   }
 }
 
+@media (min-width: 800px) {
+  .btn-nav-side {
+    display: none;
+  }
 
+  .left-content {
+    width: 535px;
+  }
+
+  .navbar-sup {
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+  }
+
+  .header-container {
+    height: 58px;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn-sections-header {
+    display: none;
+  }
+
+  .btn-search-header {
+    display: none;
+  }
+  
+  .section-name-header {
+    display: none;
+  }
+}

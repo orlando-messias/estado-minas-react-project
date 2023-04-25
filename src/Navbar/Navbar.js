@@ -5,13 +5,15 @@ import './styles.css';
 function Navbar() {
   return (
     <nav>
-      <span>
-        Início
-      </span>
-      <img src={RightArrow} alt="Seta Direita Navbar" />
-      <span>
-        Política
-      </span>
+      <div className='navbar-sup'>
+        <span>
+          Início
+        </span>
+        <img src={RightArrow} alt="Seta Direita Navbar" />
+        <span>
+          Política
+        </span>
+      </div>
     </nav>
   )
 }

@@ -1,5 +1,7 @@
 .main-container {
   padding: 0 10px;
+  max-width: 1107px;
+  margin: 0 auto;
 }
 
 .head-container .news-category, section.author {
@@ -14,9 +16,8 @@
 
 section.author {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 42px;
+  flex-direction: column;
+  height: 80px;
   margin: 20px 0;
 }
 
@@ -28,15 +29,27 @@ section.author .author-info {
   line-height: 20px;
 }
 
+section.author .published-at-box {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
 section.author .published-at {
   font-weight: 400;
   font-size: 12px;
+}
+
+section .sharing {
+  display: flex;
+  justify-content: space-between;
 }
 
 section.author .social-media {
   width: 110px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 figure {
