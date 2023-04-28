@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/estado-minas-react-project/static/css/main.886e0f85.css",
+    "main.js": "/estado-minas-react-project/static/js/main.dfa2566b.js",
+    "static/media/main-image.png": "/estado-minas-react-project/static/media/main-image.3db0f2f472f3ac2f6039.png",
+    "static/media/publi-desktop-01.png": "/estado-minas-react-project/static/media/publi-desktop-01.f419be9842aa2d66136d.png",
+    "static/media/publi-sidebar-02.png": "/estado-minas-react-project/static/media/publi-sidebar-02.df26d82edde03df63ff2.png",
+    "static/media/publi-desktop-02.png": "/estado-minas-react-project/static/media/publi-desktop-02.944a83e11715c1524d4a.png",
+    "static/media/publi-mobile-02.png": "/estado-minas-react-project/static/media/publi-mobile-02.80ccab632b68067b2b40.png",
+    "static/media/publi-sidebar-01.png": "/estado-minas-react-project/static/media/publi-sidebar-01.20825da70f308d94108e.png",
+    "static/media/publi-mobile-01.png": "/estado-minas-react-project/static/media/publi-mobile-01.23d25f8582a77f1908c3.png",
+    "index.html": "/estado-minas-react-project/index.html",
+    "main.886e0f85.css.map": "/estado-minas-react-project/static/css/main.886e0f85.css.map",
+    "main.dfa2566b.js.map": "/estado-minas-react-project/static/js/main.dfa2566b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.886e0f85.css",
+    "static/js/main.dfa2566b.js"
+  ]
+}
