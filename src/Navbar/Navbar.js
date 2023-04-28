@@ -7,11 +7,11 @@ function Navbar() {
     <nav>
       <div className='navbar-top'>
         <span>
-          Início
+          <a href="#">Início</a>
         </span>
         <img src={RightArrow} alt="Seta Direita Navbar" />
         <span>
-          Política
+          <a href="#">Política</a>
         </span>
       </div>
     </nav>

@@ -43,7 +43,7 @@ function Main() {
     <main className='main-container'>
       <section className='head-container'>
 
-        <figure className='publi-mobile-top'>
+        <figure className='publi-mobile-top btn'>
           <img src={PubliMobile01} alt="Publicidade Mobile Topo" />
         </figure>
 
@@ -57,7 +57,7 @@ function Main() {
         </h2>
 
         <figure className='publi-desktop-sup'>
-          <div className='publi-desktop-box'>
+          <div className='publi-desktop-box btn'>
             <img src={PubliDesktop01} alt="Publicidade Desktop Topo" />
           </div>
         </figure>
@@ -77,15 +77,15 @@ function Main() {
             </div>
             <div className='sharing'>
               <div className='social-media'>
-                <img src={Twitter} alt="Twitter" />
-                <img src={Whatsapp} alt="Whatsapp" />
-                <img src={Facebook} alt="Facebook" />
+                <img className='btn' src={Twitter} alt="Twitter" />
+                <img className='btn' src={Whatsapp} alt="Whatsapp" />
+                <img className='btn' src={Facebook} alt="Facebook" />
               </div>
               <a
                 href="https://news.google.com/publications/CAAqBwgKMKis8AIwoKUi?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
                 target="_blank"
               >
-                <img src={GoogleNews} alt="Link siga EM no Google News" />
+                <img className='btn' src={GoogleNews} alt="Link siga EM no Google News" />
               </a>
             </div>
 
@@ -109,7 +109,7 @@ function Main() {
             </div>
 
             <div className='text-to-speech'>
-              <img src={TextToSpeech} alt="Ouça a notícia" />
+              <img className='btn' src={TextToSpeech} alt="Ouça a notícia" />
             </div>
 
             <div>
@@ -156,12 +156,12 @@ function Main() {
                 crítica internacional.
               </p>
 
-              <figure className='publi-mobile-bottom'>
+              <figure className='publi-mobile-bottom btn'>
                 <img src={PubliMobile02} alt="Publicidade Mobile Inferior" />
               </figure>
 
               <figure className='publi-desktop-bottom'>
-                <div className='publi-desktop-bottom-box'>
+                <div className='publi-desktop-bottom-box btn'>
                   <img src={PubliDesktop02} alt="Publicidade Desktop Inferior" />
                 </div>
               </figure>
@@ -193,7 +193,7 @@ function Main() {
                   href="https://news.google.com/publications/CAAqBwgKMKis8AIwoKUi?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
                   target="_blank"
                 >
-                  <img src={LogoGoogleNews} alt="Link siga EM no Google News" />
+                  <img className='btn' src={LogoGoogleNews} alt="Link siga EM no Google News" />
                 </a>
               </div>
             </footer>

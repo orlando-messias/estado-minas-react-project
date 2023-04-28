@@ -36,7 +36,7 @@ const news = [
 function Sidebar() {
   return (
     <nav className='sidebar-container'>
-      <img src={PubliSidebar01} alt="Publicidade Sidebar Superior" />
+      <img className='btn' src={PubliSidebar01} alt="Publicidade Sidebar Superior" />
       <img className='separator-sidebar' src={SeparatorSidebar} alt="Separador da Sidebar Direita" />
 
       <section className='most-read-sidebar-section'>
@@ -56,7 +56,7 @@ function Sidebar() {
         </div>
       </section>
 
-      <div className='publi-sidebar-bottom'>
+      <div className='publi-sidebar-bottom btn'>
         <img src={PubliSidebar02} alt="Publicidade Sidebar Inferior" />
       </div>
     </nav >

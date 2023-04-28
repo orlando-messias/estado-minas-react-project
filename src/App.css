@@ -46,6 +46,26 @@ a {
   display: none;
 }
 
+.btn {
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.btn-dark {
+  cursor: pointer;
+  transition: filter 0.5s;
+}
+
+.btn-dark:hover {
+  filter: brightness(95%);
+}
+
+
+
 /* ---  WEBSITE RESPONSIVENESS ATTRIBUTES  --- */
 @media (min-width: 448px) {
   .right-content {
