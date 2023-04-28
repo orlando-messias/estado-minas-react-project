@@ -12,7 +12,7 @@ import Twitter from '../assets/social-twitter.png';
 import Whatsapp from '../assets/social-whatsapp.png';
 import Facebook from '../assets/social-facebook.png';
 import MainImage from '../assets/main-image.png';
-import LogoGoogleNews from '../assets/google-news.png';
+import LogoGoogleNews from '../assets/google-news-2.png';
 import SeparatorFooter from '../assets/separator-footer.png';
 import SeparatorSection from '../assets/separator-section.png';
 import Sidebar from '../Sidebar/Sidebar';
@@ -22,17 +22,17 @@ import './styles.css';
 const news = [
   {
     title: 'Oscar 2022: premiação ganha nova data para o próximo ano',
-    createdAt: '10/06/2020-08:57',
+    createdAt: '08:57 - 10/06/2020',
     src: './news-images/news-img-01.png'
   },
   {
     title: 'O novo trailer de Eternos é tudo o que você precisava para entrar no hype da Marvel',
-    createdAt: '10/06/2020-08:57',
+    createdAt: '08:57 - 10/06/2020',
     src: './news-images/news-img-02.png'
   },
   {
     title: 'Netflix fecha parceria com a Amblin, produtora de Steven Spielberg',
-    createdAt: '10/06/2020-08:57',
+    createdAt: '08:57 - 10/06/2020',
     src: './news-images/news-img-03.png'
   }
 ];
@@ -44,7 +44,7 @@ function Main() {
       <section className='head-container'>
 
         <figure className='publi-mobile-top'>
-          <img src={PubliMobile01} alt="Publicidade Mobile Inicio" />
+          <img src={PubliMobile01} alt="Publicidade Mobile Topo" />
         </figure>
 
         <span className='news-category'>OSCAR 2021</span>
@@ -64,9 +64,10 @@ function Main() {
 
       </section>
 
-      <div className='section-news'>
+      <section className='section-news'>
         <div>
           <section className='author'>
+
             <div className='author-info'>
               <span>Tamaki Ryushi</span>
               <div className='published-at-box'>
@@ -80,8 +81,14 @@ function Main() {
                 <img src={Whatsapp} alt="Whatsapp" />
                 <img src={Facebook} alt="Facebook" />
               </div>
-              <img src={GoogleNews} alt="Google News" />
+              <a
+                href="https://news.google.com/publications/CAAqBwgKMKis8AIwoKUi?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
+                target="_blank"
+              >
+                <img src={GoogleNews} alt="Link siga EM no Google News" />
+              </a>
             </div>
+
           </section>
 
           <article>
@@ -89,7 +96,7 @@ function Main() {
             <figure>
               <img src={MainImage} alt="Imagem Principal da Notícia" />
               <figcaption>
-                <div><img className='figura-cam' src={CameraIcon} alt="Câmera Ícone" /></div>
+                <div><img className='figure-cam' src={CameraIcon} alt="Câmera Ícone" /></div>
                 <div>
                   Após dois anos, longa voltou a ser elegível para concorrer ao Oscar 2021 e causou grande repercussão
                   <p>(foto: Divulgação)</p>
@@ -97,12 +104,12 @@ function Main() {
               </figcaption>
             </figure>
 
-            <div className='text-to-speech'>
-              <img src={TextToSpeech} alt="Text to Speech" />
+            <div className='text-to-speech-mobile'>
+              <img src={TextToSpeechMobile} alt="Ouça a notícia" />
             </div>
 
-            <div className='text-to-speech-mobile'>
-              <img src={TextToSpeechMobile} alt="Text to Speech" />
+            <div className='text-to-speech'>
+              <img src={TextToSpeech} alt="Ouça a notícia" />
             </div>
 
             <div>
@@ -122,7 +129,7 @@ function Main() {
                 <div className='read-more-section-all-content'>
                   {news.map(newsItem => (
                     <div className='read-more-section-box'>
-                      <img src={newsItem.src} alt='More' />
+                      <img src={newsItem.src} alt='Imagem Notícia Seção Leia Mais' />
                       <div className='read-more-info'>
                         <div className='read-more-info-01'>{newsItem.createdAt}</div>
                         <div className='read-more-info-02'><a href='#'>{newsItem.title}</a></div>
@@ -150,12 +157,12 @@ function Main() {
               </p>
 
               <figure className='publi-mobile-bottom'>
-                <img src={PubliMobile02} alt="Publicidade Mobile Final" />
+                <img src={PubliMobile02} alt="Publicidade Mobile Inferior" />
               </figure>
 
               <figure className='publi-desktop-bottom'>
                 <div className='publi-desktop-bottom-box'>
-                  <img src={PubliDesktop02} alt="Publicidade Desktop Final" />
+                  <img src={PubliDesktop02} alt="Publicidade Desktop Inferior" />
                 </div>
               </figure>
 
@@ -182,10 +189,14 @@ function Main() {
               <img className='separator-footer' src={SeparatorFooter} alt="Linha Rodapé" />
               <div>
                 <span>SIGA O ESTADO DE MINAS NO</span>
-                <img src={LogoGoogleNews} alt="Logo Google News" />
+                <a
+                  href="https://news.google.com/publications/CAAqBwgKMKis8AIwoKUi?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
+                  target="_blank"
+                >
+                  <img src={LogoGoogleNews} alt="Link siga EM no Google News" />
+                </a>
               </div>
             </footer>
-
 
           </article>
 
@@ -193,7 +204,7 @@ function Main() {
 
         <Sidebar />
 
-      </div>
+      </section>
 
     </main>
   )

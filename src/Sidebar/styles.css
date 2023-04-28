@@ -16,6 +16,12 @@
   padding: 10px 6px 0 0;
 }
 
+.most-read-sidebar-section p {
+  color: var(--dark);
+  font-size: 26px;
+  margin: 10px;
+}
+
 .most-read-sidebar-section-content {
   display: flex;
   flex-direction: column;
@@ -26,11 +32,12 @@
 .most-read-sidebar-section-box {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #D8D8D8;
+  border-bottom: 1px solid var(--gray);
   padding-bottom: 10px;
 }
 
 .most-read-sidebar-info-01 {
+  color: var(--dark-gray);
   font-size: 12px;
   margin-top: 5px;
 }

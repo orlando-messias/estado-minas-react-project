@@ -16,8 +16,8 @@ footer .newsletter-box {
   background-color: #F7F7F7;
   height: 111px;
   padding: 10px;
-  border-top: 1px solid #D8D8D8;
-  border-bottom: 1px solid #D8D8D8;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
   box-sizing: border-box;
   max-width: 765px;
   margin: 0 auto;
@@ -38,13 +38,13 @@ footer .newsletter-box .subtitle {
 
 footer .newsletter-form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 footer .newsletter-form input {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #888888;
-  border: 1px solid #D8D8D8;
+  color: var(--medium-gray);
+  border: 1px solid var(--gray);
   font-size: 14px;
   width: 171px;
   height: 40px;
@@ -54,8 +54,8 @@ footer .newsletter-form input {
 }
 
 footer .newsletter-form .newsletter-button {
-  background-color: #ED7D00;
-  color: #FFFFFF;
+  background-color: var(--orange);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,8 +99,8 @@ footer .share .comments .comments-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #004071;
-  color: #FFFFFF;
+  background-color: var(--blue);
+  color: var(--white);
   width: 210px;
   height: 32px;
 }
@@ -111,8 +111,4 @@ footer .share .comments p {
 
 footer span a {
   text-decoration: underline;
-}
-
-.footer-sidebar {
-  width: 310px;
 }

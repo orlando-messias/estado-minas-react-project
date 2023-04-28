@@ -5,7 +5,7 @@ import './styles.css';
 function Navbar() {
   return (
     <nav>
-      <div className='navbar-sup'>
+      <div className='navbar-top'>
         <span>
           Início
         </span>

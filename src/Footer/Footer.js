@@ -9,7 +9,7 @@ function Footer() {
     <footer className='footer-general'>
       <div className='footer-container'>
         <div className='newsletter-box'>
-          <div className='newslotter-box-info'>
+          <div className='newsletter-box-info'>
             <p className='title'>RECEBA NOSSA NEWSLETTER</p>
             <p className='subtitle'>Comece o dia com as notícias selecionadas pelo nosso editor</p>
           </div>
