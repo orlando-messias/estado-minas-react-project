@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/estado-minas-react-project/static/css/main.0c669542.css",
+    "main.css": "/estado-minas-react-project/static/css/main.2ebfe8ba.css",
     "main.js": "/estado-minas-react-project/static/js/main.60131025.js",
     "static/media/main-image.png": "/estado-minas-react-project/static/media/main-image.3db0f2f472f3ac2f6039.png",
     "static/media/publi-desktop-01.png": "/estado-minas-react-project/static/media/publi-desktop-01.f419be9842aa2d66136d.png",
@@ -10,11 +10,11 @@
     "static/media/publi-sidebar-01.png": "/estado-minas-react-project/static/media/publi-sidebar-01.20825da70f308d94108e.png",
     "static/media/publi-mobile-01.png": "/estado-minas-react-project/static/media/publi-mobile-01.23d25f8582a77f1908c3.png",
     "index.html": "/estado-minas-react-project/index.html",
-    "main.0c669542.css.map": "/estado-minas-react-project/static/css/main.0c669542.css.map",
+    "main.2ebfe8ba.css.map": "/estado-minas-react-project/static/css/main.2ebfe8ba.css.map",
     "main.60131025.js.map": "/estado-minas-react-project/static/js/main.60131025.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c669542.css",
+    "static/css/main.2ebfe8ba.css",
     "static/js/main.60131025.js"
   ]
 }
