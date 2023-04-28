@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+
+    <meta name="theme-color" content="#004071" />
+    <link rel="apple-touch-icon" href="/src/assets/logo-em.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="canonical" href="https://orlando-messias.github.io/estado-minas-react-project/" />
     
     <!-- Merriweather and Roboto fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +18,25 @@
       rel="stylesheet"
     >
     
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
     <title>EM Notícias</title>
   </head>
   
   <body>
+
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+          .then(function() {
+            console.log('service worker registered');
+          })
+          .catch(function() {
+            console.warn('service worker failed');
+          });
+      }
+    </script>
+
     <div id="root"></div>
+    
   </body>
 </html>
 

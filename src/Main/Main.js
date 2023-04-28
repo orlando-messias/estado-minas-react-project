@@ -94,7 +94,7 @@ function Main() {
           <article>
 
             <figure>
-              <img src={MainImage} alt="Imagem Principal da Notícia" />
+              <img className='main-figure' src={MainImage} alt="Imagem Principal da Notícia" />
               <figcaption>
                 <div><img className='figure-cam' src={CameraIcon} alt="Câmera Ícone" /></div>
                 <div>
