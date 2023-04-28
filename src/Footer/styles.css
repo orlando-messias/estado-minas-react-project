@@ -1,3 +1,12 @@
+.footer-general {
+  max-width: 1107px;
+  margin: 0 auto 20px;
+}
+
+.footer-general .footer-container {
+  max-width: 785px;
+}
+
 footer .newsletter-box {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
@@ -10,6 +19,8 @@ footer .newsletter-box {
   border-top: 1px solid #D8D8D8;
   border-bottom: 1px solid #D8D8D8;
   box-sizing: border-box;
+  max-width: 765px;
+  margin: 0 auto;
 }
 
 footer .newsletter-box .title {
@@ -100,4 +111,8 @@ footer .share .comments p {
 
 footer span a {
   text-decoration: underline;
+}
+
+.footer-sidebar {
+  width: 310px;
 }

@@ -4,6 +4,9 @@ import PubliMobile02 from '../assets/publi-mobile-02.png';
 import PubliDesktop01 from '../assets/publi-desktop-01.png';
 import PubliDesktop02 from '../assets/publi-desktop-02.png';
 import ClockIcon from '../assets/clock-icon.png';
+import CameraIcon from '../assets/camera-icon.png';
+import TextToSpeech from '../assets/text-to-speech.png';
+import TextToSpeechMobile from '../assets/text-to-speech-mobile.png';
 import GoogleNews from '../assets/google-news.png';
 import Twitter from '../assets/social-twitter.png';
 import Whatsapp from '../assets/social-whatsapp.png';
@@ -12,6 +15,7 @@ import MainImage from '../assets/main-image.png';
 import LogoGoogleNews from '../assets/google-news.png';
 import SeparatorFooter from '../assets/separator-footer.png';
 import SeparatorSection from '../assets/separator-section.png';
+import Sidebar from '../Sidebar/Sidebar';
 
 import './styles.css';
 
@@ -37,7 +41,7 @@ function Main() {
 
   return (
     <main className='main-container'>
-      <div className='head-container'>
+      <section className='head-container'>
 
         <figure className='publi-mobile-top'>
           <img src={PubliMobile01} alt="Publicidade Mobile Inicio" />
@@ -58,120 +62,138 @@ function Main() {
           </div>
         </figure>
 
-
-      </div>
-      <section className='author'>
-        <div className='author-info'>
-          <span>Tamaki Ryushi</span>
-          <div className='published-at-box'>
-            <span><img src={ClockIcon} alt="Ícone Relógio" /></span>
-            <span className='published-at'>02/02/2021 08:22</span>
-          </div>
-        </div>
-        <div className='sharing'>
-          <div className='social-media'>
-            <img src={Twitter} alt="Twitter" />
-            <img src={Whatsapp} alt="Whatsapp" />
-            <img src={Facebook} alt="Facebook" />
-          </div>
-          <img src={GoogleNews} alt="Google News" />
-        </div>
       </section>
 
-      <article>
-
-        <figure>
-          <img src={MainImage} alt="Imagem Principal da Notícia" />
-          <figcaption>
-            Após dois anos, longa voltou a ser elegível para concorrer ao Oscar 2021 e causou grande repercussão
-            <span>(foto: Divulgação)</span>
-          </figcaption>
-        </figure>
-
+      <div className='section-news'>
         <div>
-          <p>
-            A notícia de que o filme Bacurau (2019), dirigido por Kleber Mendonça Filho e Juliano Dornelles, voltou a ser
-            elegível para concorrer ao Oscar 2021 tem causado grande repercussão nas redes e na imprensa nacional e
-            internacional. Na última sexta-feira (29/1), a distribuidora independente Vitrine Filmes anunciou que o filme
-            está registrado no catálogo do Academy Screening Room. Essa é a plataforma de acesso exclusivo aos membros da
-            Academia, responsáveis pela seletiva do prêmio. A lista final dos filmes selecionados será divulgada em 15 de
-            fevereiro. O filme poderá concorrer às principais categorias, exceto Melhor Filme Estrangeiro.
-          </p>
-
-          <img src={SeparatorSection} alt="Linha Seção" />
-
-          <section className='read-more-section'>
-            <p>LEIA MAIS</p>
-            <div className='read-more-section-all-content'>
-              {news.map(newsItem => (
-                <div className='read-more-section-box'>
-                  <img src={newsItem.src} alt='More' />
-                  <div className='read-more-info'>
-                    <div className='read-more-info-01'>{newsItem.createdAt}</div>
-                    <div className='read-more-info-02'><a href='#'>{newsItem.title}</a></div>
-                  </div>
-                </div>
-              ))}
+          <section className='author'>
+            <div className='author-info'>
+              <span>Tamaki Ryushi</span>
+              <div className='published-at-box'>
+                <span><img src={ClockIcon} alt="Ícone Relógio" /></span>
+                <span className='published-at'>02/02/2021 08:22</span>
+              </div>
+            </div>
+            <div className='sharing'>
+              <div className='social-media'>
+                <img src={Twitter} alt="Twitter" />
+                <img src={Whatsapp} alt="Whatsapp" />
+                <img src={Facebook} alt="Facebook" />
+              </div>
+              <img src={GoogleNews} alt="Google News" />
             </div>
           </section>
 
-          <img src={SeparatorSection} alt="Linha Seção" />
+          <article>
 
-          <h3>Repercussão</h3>
+            <figure>
+              <img src={MainImage} alt="Imagem Principal da Notícia" />
+              <figcaption>
+                <div><img className='figura-cam' src={CameraIcon} alt="Câmera Ícone" /></div>
+                <div>
+                  Após dois anos, longa voltou a ser elegível para concorrer ao Oscar 2021 e causou grande repercussão
+                  <p>(foto: Divulgação)</p>
+                </div>
+              </figcaption>
+            </figure>
 
-          <p>
-            Fãs, veículos de imprensa e responsáveis pela produção de Bacurau têm usado as redes sociais para comemorar a
-            novidade. O anúncio inicia uma nova carreira para o longa pernambucano na corrida pelo Oscar este ano, já que
-            ficou de fora da edição de 2020.
-          </p>
+            <div className='text-to-speech'>
+              <img src={TextToSpeech} alt="Text to Speech" />
+            </div>
 
-          <p>
-            Nas redes sociais, o cineasta Kleber Mendonça Filho comemorou a visibilidade do filme. “Eu fico feliz com
-            Bacurau sendo visto no Brasil e no mundo, não importa aonde”, escreveu. Em outra postagem, feita neste
-            domingo (31/1), com foto da capa do jornal The New York Times, o diretor destacou o apoio da imprensa e
-            crítica internacional.
-          </p>
+            <div className='text-to-speech-mobile'>
+              <img src={TextToSpeechMobile} alt="Text to Speech" />
+            </div>
 
-          <figure className='publi-mobile-bottom'>
-            <img src={PubliMobile02} alt="Publicidade Mobile Final" />
-          </figure>
+            <div>
+              <p>
+                A notícia de que o filme Bacurau (2019), dirigido por Kleber Mendonça Filho e Juliano Dornelles, voltou a ser
+                elegível para concorrer ao Oscar 2021 tem causado grande repercussão nas redes e na imprensa nacional e
+                internacional. Na última sexta-feira (29/1), a distribuidora independente Vitrine Filmes anunciou que o filme
+                está registrado no catálogo do Academy Screening Room. Essa é a plataforma de acesso exclusivo aos membros da
+                Academia, responsáveis pela seletiva do prêmio. A lista final dos filmes selecionados será divulgada em 15 de
+                fevereiro. O filme poderá concorrer às principais categorias, exceto Melhor Filme Estrangeiro.
+              </p>
 
-          <figure className='publi-desktop-bottom'>
-            <img src={PubliDesktop02} alt="Publicidade Mobile Final" />
-          </figure>
+              <img src={SeparatorSection} alt="Linha Seção" />
 
-          <h3>Corrida pelo Oscar</h3>
+              <section className='read-more-section'>
+                <p>LEIA MAIS</p>
+                <div className='read-more-section-all-content'>
+                  {news.map(newsItem => (
+                    <div className='read-more-section-box'>
+                      <img src={newsItem.src} alt='More' />
+                      <div className='read-more-info'>
+                        <div className='read-more-info-01'>{newsItem.createdAt}</div>
+                        <div className='read-more-info-02'><a href='#'>{newsItem.title}</a></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
 
-          <p>
-            Essa é uma nova chance para o longa pernambucano, que ficou de fora da edição do ano passado da grande
-            celebração do cinema mundial. Na ocasião, a Academia Brasileira de Cinema (ABC) indicou o filme A vida
-            invisível, de Karim Aïnouz, como título para representar o país. Este ano, a ABC apoia a candidatura de
-            Babenco: alguém tem que ouvir o coração e dizer: parou, de Bárbara Paz, documentário de arte sobre obra
-            a vida do cineasta Hector Babenco.
-          </p>
+              <img src={SeparatorSection} alt="Linha Seção" />
 
-          <p>
-            Por não estar sendo indicado por uma agência internacional, no caso a ABC, Bacurau está elegível para todas
-            as categorias de filmes de ficção, como Melhor Filme, Direção, Atriz Coadjuvante, Ator Coadjuvante e Melhor
-            Roteiro Original, exceto para a de Melhor Filme em Língua Estrangeira. A distribuidora americana Kino
-            Lorber está à frente da campanha.
-          </p>
+              <h3>Repercussão</h3>
+
+              <p>
+                Fãs, veículos de imprensa e responsáveis pela produção de Bacurau têm usado as redes sociais para comemorar a
+                novidade. O anúncio inicia uma nova carreira para o longa pernambucano na corrida pelo Oscar este ano, já que
+                ficou de fora da edição de 2020.
+              </p>
+
+              <p>
+                Nas redes sociais, o cineasta Kleber Mendonça Filho comemorou a visibilidade do filme. “Eu fico feliz com
+                Bacurau sendo visto no Brasil e no mundo, não importa aonde”, escreveu. Em outra postagem, feita neste
+                domingo (31/1), com foto da capa do jornal The New York Times, o diretor destacou o apoio da imprensa e
+                crítica internacional.
+              </p>
+
+              <figure className='publi-mobile-bottom'>
+                <img src={PubliMobile02} alt="Publicidade Mobile Final" />
+              </figure>
+
+              <figure className='publi-desktop-bottom'>
+                <div className='publi-desktop-bottom-box'>
+                  <img src={PubliDesktop02} alt="Publicidade Desktop Final" />
+                </div>
+              </figure>
+
+              <h3>Corrida pelo Oscar</h3>
+
+              <p>
+                Essa é uma nova chance para o longa pernambucano, que ficou de fora da edição do ano passado da grande
+                celebração do cinema mundial. Na ocasião, a Academia Brasileira de Cinema (ABC) indicou o filme A vida
+                invisível, de Karim Aïnouz, como título para representar o país. Este ano, a ABC apoia a candidatura de
+                Babenco: alguém tem que ouvir o coração e dizer: parou, de Bárbara Paz, documentário de arte sobre obra
+                a vida do cineasta Hector Babenco.
+              </p>
+
+              <p>
+                Por não estar sendo indicado por uma agência internacional, no caso a ABC, Bacurau está elegível para todas
+                as categorias de filmes de ficção, como Melhor Filme, Direção, Atriz Coadjuvante, Ator Coadjuvante e Melhor
+                Roteiro Original, exceto para a de Melhor Filme em Língua Estrangeira. A distribuidora americana Kino
+                Lorber está à frente da campanha.
+              </p>
+            </div>
+
+            <footer>
+              <p>Fique sempre bem informado.</p>
+              <img className='separator-footer' src={SeparatorFooter} alt="Linha Rodapé" />
+              <div>
+                <span>SIGA O ESTADO DE MINAS NO</span>
+                <img src={LogoGoogleNews} alt="Logo Google News" />
+              </div>
+            </footer>
+
+
+          </article>
+
         </div>
 
-        <footer>
-          <p>Fique sempre bem informado.</p>
-          <img className='separator-footer' src={SeparatorFooter} alt="Linha Rodapé" />
-          <div>
-            <span>SIGA O ESTADO DE MINAS NO</span>
-            <img src={LogoGoogleNews} alt="Logo Google News" />
-          </div>
-        </footer>
+        <Sidebar />
 
-      </article>
-
-      <aside>
-        <p>Content aside here</p>
-      </aside>
+      </div>
 
     </main>
   )
