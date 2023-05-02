@@ -3,7 +3,7 @@
     "background_color": "#004071",
     "display": "standalone",
     "scope": "/index.html",
-    "start_url": "/",
+    "start_url": "https://orlando-messias.github.io/estado-minas-react-project/",
     "name": "EM Noticias",
     "short_name": "EM",
     "icons": [
